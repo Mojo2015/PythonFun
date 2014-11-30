@@ -4,4 +4,5 @@ def Test():
     Vagina2 = input("Do you prefer large or gigantic tits: ")
     print('\r')
     print("Yes, I totally agree with you, I like", Vagina, Vagina2, "and semen in my anoose")
+    print("Isn't it awesome learning how to import functions from other projects?")
 
