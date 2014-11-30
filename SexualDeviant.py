@@ -7,6 +7,7 @@ Testing a third commit/push after closing out git
 """
 import time
 import sys
+import Test
 
 
 def Retry():    
@@ -28,6 +29,8 @@ def JoHamed():
     print("5. Hermaphrodidic Dojo Ninja")
     print("6. This game is fucking gay and I would rather see pics of giant cocks")
     print("7. This game fucking RULES and I would like to see some big TITS NOW")
+    print("8. I want to play something else, enough of this phaggy shit.")
+    print("9. I'm not sure if this is going to work, but lets try!")
     
     print("\r\n")
     PrimeSelect = int(input("Select a number of your favorite form of sexual stimubations (enter an integer): "))
@@ -213,6 +216,9 @@ def JoHamed():
         print(NiceBigTitties)
         print("\r")
 
+    elif (PrimeSelect == 8):
+        from Test import Test
+        Test()
         
 
 
@@ -229,9 +235,11 @@ def JoHamed():
         print("Watch this phaggot")
 
         time.sleep(1)
-        Phaggot = 1
-        while (Phaggot == 1):
-               print ("You have a serious addiction to mammoth cocks in your asshole you gay son of a BITCH")
+        Pecker = 1
+        while (Pecker <= 200):
+            Pecker += 1
+            print ("You have a serious addiction to mammoth cocks in your asshole you gay son of a BITCH")
+            print ("\r\n")
 
     time.sleep(2)
     Retry()
