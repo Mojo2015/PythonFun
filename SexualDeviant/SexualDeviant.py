@@ -34,8 +34,27 @@ def JoHamed():
     print("9. I'm not sure if this is going to work, but lets try!")
     
     print("\r\n")
-    PrimeSelect = int(input("Select a number of your favorite form of sexual stimubations (enter an integer): "))
-    print("\r")
+    
+    try: ##This is needed to enter an exception handling process, see the "except" function below##
+    
+        PrimeSelect = int(input("Select a number of your favorite form of sexual stimubations (enter an integer): "))
+        print("\r\n")
+
+    except (ValueError, KeyboardInterrupt): ##This will cause an exception of the user does not enter the proper value (integer) and warn of a keyboard interrupt (control + c)##
+        print("Come on guy, you have to actually provide me with a number, quit dicksaucing around..")
+        time.sleep(2)
+        print("\r\n")
+        JoHamed() #restart
+
+    else: #if the exception does not occur continue from here
+        if (PrimeSelect == 0 or PrimeSelect >= 10):
+            print("Wow man, the options are 1-9 and you enter this crap? please die.")
+
+        else:
+                  
+            print("Congrats phaggot, you selected ", PrimeSelect)
+            print("Prepare to have your anoose dominated.")
+            print("\r\n")
 
     if (PrimeSelect == 1):
         print("Ok so you're a phaggot, select one of the following: ")
