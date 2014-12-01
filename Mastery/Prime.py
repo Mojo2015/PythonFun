@@ -20,7 +20,7 @@ print("1. How long will it take me to master Python?")
 def Selection():
 
     try:
-        MainSelect = int(input("\r\n Enter a number: \r\n"))
+        MainSelect = int(input("\r\n Enter a number: "))
 
 
     except ValueError:
