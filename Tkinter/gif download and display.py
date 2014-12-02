@@ -1,3 +1,5 @@
+#Paste an image url, name it, boom it opens!
+
 import random
 import urllib.request
 import sys
