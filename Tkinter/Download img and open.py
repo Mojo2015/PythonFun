@@ -13,7 +13,9 @@ def download_web_image(url):
     global name
     global full_name
     name = str(input("what do you want to name it? "))
-    full_name = str(name) + "." + str(Define_URL[-3:]) #str(name) will convert it to a string
+    string = (Define_URL)
+    split = (string.rsplit('.', 1))
+    full_name = str(name) + "." +str(split[-1]) #str(name) will convert it to a string
     urllib.request.urlretrieve(url, full_name)
     print(Define_URL[-3:])
     return name
