@@ -1,0 +1,25 @@
+from tkinter import *
+
+mGui = Tk()
+mGui.geometry('500x800')
+mGui.title(' FUCK ')
+
+menubar = Menu(mGui)
+filemenu = Menu(menubar, tearoff = 0)
+filemenu.add_command(label = 'new')
+filemenu.add_cascade(label = 'file', menu = filemenu)
+
+mGui.config(menu = menubar)
+
+
+
+
+
+
+
+
+
+
+
+
+mGui.mainloop()
