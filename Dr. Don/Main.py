@@ -12,7 +12,7 @@ from tkinter import *
 import os
 
 #Set Variables#
-curse = ("fuck","piss","asshole", "shit", "bitch", "pussy", "asshole")
+curse = ("fuck","piss","asshole", "shit", "bitch", "pussy")
 angerLevel = 0
 sayInput = ("say", "repeat after me")
 

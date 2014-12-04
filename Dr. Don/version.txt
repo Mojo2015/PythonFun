@@ -1,0 +1,10 @@
+12/3/2014: 0.1.0 
+Initial idea created
+
+12/4/2014: 0.1.1
+1. Functions created, program loops
+2. Foul language detection added, program will quit and display image
+3. Random responses functioning
+4. Added ability for users to input "say" at the beginning of a phrase, Dr. Don will repeat the string.
+5. Added "Quit" functionality, type quit and program will end.
+6. Dr. Don will now replace input such as "I am" with "one is" for more logical responses
