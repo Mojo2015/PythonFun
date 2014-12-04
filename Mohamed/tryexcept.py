@@ -1,5 +1,5 @@
 #Exception Handling 1#
-#What's wrong with this code?#
+
 
 def bacon(): #Creating a function so i can make it restart if error
     
