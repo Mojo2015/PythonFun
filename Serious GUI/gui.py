@@ -1,7 +1,7 @@
 """
 First 100% Functional GUI
 12/3/2014
-Johamed 0.1 alpha
+Johamed 0.1.0 alpha
 
 """
 

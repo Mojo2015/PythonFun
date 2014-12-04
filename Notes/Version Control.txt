@@ -1,0 +1,10 @@
+Programs contained in this git will be updated with versions until "final release".
+
+Standard practice will be x.x.x versions
+
+1.0.0 will be first public release
+0.1.0 will indicate an alpha / beta incomplete program.
+
+0.1.1 indicates a minor revision to the code has been made
+0.2.0 indicates a moderate update, such as support for .jpeg extensions
+2.0.0 indicates a major update, such as an entire revision/codebase change

@@ -1,3 +1,8 @@
+"""
+This is a module file
+Open SexualDeviant.py to run program
+"""
+
 def Test():
     print("test 1 2 3 4")
     Vagina = input("Tell me how you feel about vaginas: ")

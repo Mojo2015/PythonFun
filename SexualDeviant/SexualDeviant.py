@@ -3,8 +3,7 @@
 You mirin' ??
 Created by Jomomohomo
 11/69/2014
-Testing a third commit/push after closing out git
-Mohamed's first git push, reopen git shell for me and stuff 
+Run this program from SexualDeviant.py
 """
 import time
 import sys
