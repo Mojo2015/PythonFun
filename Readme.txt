@@ -3,6 +3,7 @@ Well, I figure while we're dicking around with python we need the easiest way po
 Usually the readme will have notes and information on how to compile the program, but for now just pull it and run the simple programs through IDLE.
 
 ***For anybody wanting to test these programs***
+As of now none of these programs have been compiled into working programs, they must be run through a python interpreter.
 
 1. https://www.python.org/downloads/ -- Download and install Python 3.4.2
 2. Run the installer with all settings default
