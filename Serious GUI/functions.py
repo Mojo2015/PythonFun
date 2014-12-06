@@ -10,7 +10,7 @@ from config import * #Need this for our global variables to work#
 
 #Functions **PLEASE COPY TO A MODULE AND IMPORT LATER TO SAVE SPACE**
 def mNew():
-    messagebox.showinfo(title="HEY!",message ="Nothing to see here yet!")
+    messagebox.showinfo(title="Warning",message ="This user has come out of the closet, please upgrade to Chippendales 2.0")
     return
     #just a space filler
 
