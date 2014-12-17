@@ -12,5 +12,3 @@ As of now none of these programs have been compiled into working programs, they 
 5. A window will pop up containing the source code, press f5 and it will run it in a python interpreter (Shell).
 
 Note: Some projects use multiple files, they contain a readme telling you which .py file to start from.
-
-Test: mubuntu
