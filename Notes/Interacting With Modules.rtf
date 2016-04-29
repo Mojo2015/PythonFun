@@ -1,0 +1,164 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Arial;}{\f2\froman\fcharset0 CourierStd;}{\f3\froman\fcharset0 CourierStd-Oblique;}{\f4\froman\fcharset0 CheltenhamStd-Book;}{\f5\froman\fcharset0 CheltenhamStd-BookItalic;}{\f6\fswiss\fcharset128 UniversalStd-NewswithCommPi;}{\f7\froman\fcharset0 CheltenhamStd-Bold;}{\f8\fnil\fcharset0 CheltenhamStd-Book-Identity-H;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\ul\b\f0\fs40 Beginning Programming With Python Continued\par
+\par
+\ulnone\fs24 Interacting with modules\par
+\b0 Projects get very large, it would be impossible to look through millions of lines of text. Thusly, projects are broken up into modules; that is, multiple files that are smaller and easier to manage.\par
+\par
+Libraries - Commonly used modules that contain source code for generic needs.\par
+\par
+importing - the process of obtaining code found in external files.\par
+\par
+Code groupings generally fall into: Classes, Functions, Variables, Runnable code\par
+\tab -Each of which get stored into a module. Modules are a great way of making reusable code, instead of retyping the same block of code over and over, just call the code from its module and it will run.\par
+\par
+\b import and from...import statements\par
+\b0 import is used when you want to import an entire module. This is the most common method because it is time saving and requires only one line of code. However it uses more memory resources\par
+\par
+from...import: You use the from...import statement when you want to selectively import individual module attributes. This method saves resources but at the cost of complexity.\par
+\par
+\ul\b Strings\par
+\ulnone\b0 You can print random parts of strings using ranges\par
+ex.\par
+String = "Hello World"\par
+print(String[0:5]) will print hello, same as print(String[:5]\par
+\par
+Concatenation: You can add parts of two strings together (or the whole string)\par
+print(String1 + String2)\par
+\par
+Repetition: You can repeat strings or parts of strings\par
+print(String1 * 50)\par
+\par
+Other string altering functions:\par
+\pard\f1\u10003? capitalize(): Capitalizes the first letter of a string.\par
+\u10003? center(\i width\i0 , \i fillchar\i0 =" "): Centers a string so that it fits within\par
+the number of spaces specified by \i width\i0 . If you supply a character for\par
+\i fillchar\i0 , the function uses that character. Otherwise, center() uses\par
+spaces to create a string of the desired width.\par
+\u10003? expandtabs(\i tabsize\i0 =8): Expands tabs in a string by replacing the\par
+tab with the number of spaces specified by \i tabsize\i0 . The function\par
+defaults to 8 spaces per tab when \i tabsize \i0 isn\rquote t provided.\par
+\u10003? isalnum(): Returns True when the string has at least one character\par
+and all characters are alphanumeric (letters or numbers).\par
+\u10003? isalpha(): Returns True when the string has at least one character\par
+and all characters are alphabetic (letters only).\par
+\u10003? isdecimal(): Returns True when a Unicode string contains only\par
+\pard\sa200\sl276\slmult1 decimal characters.\par
+\pard\u10003? isdigit(): Returns True when a string contains only digits (numbers\par
+and not letters).\par
+\u10003? islower(): Returns True when a string has at least one alphabetic\par
+character and all alphabetic characters are in lowercase.\par
+\u10003? isnumeric(): Returns True when a Unicode string contains only\par
+numeric characters.\par
+\u10003? isspace(): Returns True when a string contains only whitespace characters\par
+(which includes spaces, tabs, carriage returns, linefeeds, form\par
+feeds, and vertical tabs, but not the backspace).\par
+\u10003? istitle(): Returns True when a string is cased for use as a title, such\par
+as \i Hello World\i0 . However, the function requires that even little words\par
+have the title case. For example, \i Follow a Star \i0 returns False, even\par
+though it\rquote s properly cased, but \i Follow A Star \i0 returns True.\par
+\u10003? isupper(): Returns True when a string has at least one alphabetic\par
+character and all alphabetic characters are in uppercase.\par
+\u10003? join(\i seq\i0 ): Creates a string in which the base string is separated in\par
+turn by each character in \i seq \i0 in a repetitive fashion. For example, if\par
+you start with MyString = "Hello" and type print(MyString.\par
+join("!*!")), the output is !Hello*Hello!.\par
+\u10003? len(\i string\i0 ): Obtains the length of \i string\i0 .\par
+\u10003? ljust(\i width\i0 , \i fillchar\i0 =" "): Left justifies a string so that it fits\par
+within the number of spaces specified by \i width\i0 . If you supply a character\par
+for \i fillchar\i0 , the function uses that character. Otherwise, ljust()\par
+uses spaces to create a string of the desired width.\par
+\u10003? lower(): Converts all uppercase letters in a string to lowercase letters.\par
+\u10003? lstrip(): Removes all leading whitespace characters in a string.\par
+\u10003? max(\i str\i0 ): Returns the character that has the maximum numeric value\par
+in \i str\i0 . For example, \i a \i0 would have a larger numeric value than \i A\i0 .\par
+\u10003? min(\i str\i0 ): Returns the character that has the minimum numeric value\par
+in \i str\i0 . For example, \i A \i0 would have a smaller numeric value than \i a\i0 .\par
+\u10003? rjust(\i width\i0 , \i fillchar\i0 =" "): Right justifies a string so that it fits\par
+within the number of spaces specified by \i width\i0 . If you supply a character\par
+for \i fillchar\i0 , the function uses that character. Otherwise, rjust()\par
+uses spaces to create a string of the desired width.\par
+\u10003? rstrip(): Removes all trailing whitespace characters in a string.\par
+\u10003? split(\i str\i0 =" ", \i num\i0 =string.count(\i str\i0 )): Splits a string into substrings\par
+using the delimiter specified by \i str \i0 (when supplied). The default is\par
+to use a space as a delimiter. Consequently, if your string contains \i A Fine\par
+Day\i0 , the output would be three substrings consisting of \i A\i0 , \i Fine\i0 , and \i Day\i0 .\par
+You use \i num \i0 to define the number of substrings to return. The default is to\par
+\pard\sa200\sl276\slmult1 return every substring that the function can produce.\par
+\pard\u10003? splitlines(\i num\i0 =string.count('\\n')): Splits a string that\par
+contains newline (\\n) characters into individual strings. Each break\par
+occurs at the newline character. The output has the newline characters\par
+removed. You can use \i num \i0 to specify the number of strings to return.\par
+\u10003? strip(): Removes all leading and trailing whitespace characters\par
+in a string.\par
+\u10003? swapcase(): Inverts the case for each alphabetic character in a string.\par
+\u10003? title(): Returns a string in which the initial letter in each word is in\par
+uppercase and all remaining letters in the word are in lowercase.\par
+\u10003? upper(): Converts all lowercase letters in a string to uppercase letters.\par
+\u10003? zfill (\i width\i0 ): Returns a string that is left-padded with zeros so that\par
+the resulting string is the size of \i width\i0 . This function is designed for\par
+use with strings containing numeric values. It retains the original sign\par
+\pard\sa200\sl276\slmult1 information (if any) supplied with the number.\par
+\b\f0\fs22 Locating and altering values within a string (good search features)\par
+\pard\b0\f2\fs19 count(\i\f3 str\i0\f2 , \i\f3 beg\i0\f2 = 0, \i\f3 end\i0\f2 =len(\i\f3 string\i0\f2 ))\f4 : Counts how many times\par
+\i\f5 str \i0\f4 occurs in a string. You can limit the search by specifying a beginning\par
+index using \i\f3 beg \i0\f4 or an ending index using \i\f3 end\i0\f4 .\par
+\f6\u10003? \f2 endswith(\i\f3 suffix\i0\f2 , \i\f3 beg\i0\f2 =0, \i\f3 end\i0\f2 =len(\i\f3 string\i0\f2 ))\f4 : Returns \f2 True\par
+\f4 when a string ends with the characters specified by \i\f3 suffix\i0\f4 . You can\par
+limit the check by specifying a beginning index using \i\f3 beg \i0\f4 or an ending\par
+index using \i\f3 end\i0\f4 .\par
+\f6\u10003? \f2 find(\i\f3 str\i0\f2 , \i\f3 beg\i0\f2 =0, \i\f3 end\i0\f2 =len(\i\f3 string\i0\f2 ))\f4 : Determines whether \i\f3 str\par
+\i0\f4 occurs in a string and outputs the index of the location. You can limit\par
+the search by specifying a beginning index using \i\f3 beg \i0\f4 or a ending index\par
+using \i\f3 end\i0\f4 .\par
+\f6\u10003? \f2 index(\i\f3 str\i0\f2 , \i\f3 beg\i0\f2 =0, \i\f3 end\i0\f2 =len(\i\f3 string\i0\f2 ))\f4 : Provides the same functionality\par
+as \f2 find()\f4 , but raises an exception when \i\f3 str \i0\f4 isn\rquote t found.\par
+\f6\u10003? \f2 replace(\i\f3 old\i0\f2 , \i\f3 new \i0\f2 [, \i\f3 max\i0\f2 ])\f4 : Replaces all occurrences of the character\par
+sequence specified by \i\f3 old \i0\f4 in a string with the character sequence\par
+specified by \i\f3 new\i0\f4 . You can limit the number of replacements by specifying\par
+a value for \i\f3 max\i0\f4 .\par
+\f6\u10003? \f2 rfind(\i\f3 str\i0\f2 , \i\f3 beg\i0\f2 =0, \i\f3 end\i0\f2 =len(\i\f3 string\i0\f2 ))\f4 : Provides the same functionality\par
+as \f2 find()\f4 , but searches backward from the end of the string instead\par
+of the beginning.\par
+\f6\u10003? \f2 rindex(\i\f3 str\i0\f2 , \i\f3 beg\i0\f2 =0, \i\f3 end\i0\f2 =len(\i\f3 string\i0\f2 ))\f4 : Provides the same functionality\par
+as \f2 index()\f4 , but searches backward from the end of the string instead\par
+of the beginning.\par
+\f6\u10003? \f2 startswith(\i\f3 prefix\i0\f2 , \i\f3 beg\i0\f2 =0, \i\f3 end\i0\f2 =len(string))\f4 : Returns \f2 True\par
+\f4 when a string begins with the characters specified by \i\f3 prefix\i0\f4 . You can\par
+limit the check by specifying a beginning index using \i\f3 beg \i0\f4 or an ending\par
+\pard\sa200\sl276\slmult1 index using \i\f3 end\i0\f4 .\par
+\par
+\b Formatting\par
+\pard\b0\f6\u10003? \b\f7 fill: \b0\f4 Defines the fill character used when displaying data that is too small\par
+to fit within the assigned space.\par
+\f6\u10003? \b\f7 align: \b0\f4 Specifies the alignment of data within the display space. You can\par
+use these alignments:\par
+\f8\bullet  \b\f7 <: \b0\f4 Left aligned\par
+\f8\bullet  \b\f7 >: \b0\f4 Right aligned\par
+\f8\bullet  \b\f7 ^: \b0\f4 Centered\par
+\f8\bullet  \b\f7 =: \b0\f4 Justified\par
+\f6\u10003? \b\f7 sign: \b0\f4 Determines the use of signs for the output:\par
+\f8\bullet  \b\f7 +: \b0\f4 Positive numbers have a plus sign and negative numbers have a\par
+minus sign.\par
+\f8\bullet  \b\f7 -: \b0\f4 Negative numbers have a minus sign.\par
+\f8\bullet  \b\f7 <\b0\f4 space\b\f7 >: \b0\f4 Positive numbers are preceded by a space and negative\par
+numbers have a minus sign.\par
+\f6\u10003? \b\f7 #: \b0\f4 Specifies that the output should use the alternative display format for\par
+numbers. For example, hexadecimal numbers will have a 0x prefix added\par
+to them.\par
+\f6\u10003? \b\f7 0: \b0\f4 Specifies that the output should be sign aware and padded with zeros\par
+as needed to provide consistent output.\par
+\f6\u10003? \b\f7 width: \b0\f4 Determines the full width of the data field (even if the data won\rquote t\par
+fit in the space provided).\par
+\f6\u10003? \b\f7 ,: \b0\f4 Specifies that numeric data should have commas as a thousands\par
+separator.\par
+\f6\u10003? \b\f7 .precision: \b0\f4 Determines the number of characters after the decimal point.\par
+\f6\u10003? \b\f7 type: \b0\f4 Specifies the output type, even if the input type doesn\rquote t match.\par
+The types are split into three groups:\par
+\f8\bullet  \i\f5 String: \i0\f4 Use an \f2 s \f4 or nothing at all to specify a string.\par
+\f8\bullet  \i\f5 Integer: \i0\f4 The integer types are as follows: \f2 b \f4 (binary); \f2 c \f4 (character);\par
+\f2 d \f4 (decimal); \f2 o \f4 (octal); \f2 x \f4 (hexadecimal with lowercase letters);\par
+\f2 X \f4 (hexadecimal with uppercase letters); and \f2 n \f4 (locale-sensitive\par
+decimal that uses the appropriate characters for the thousands\par
+\pard\sa200\sl276\slmult1 separator).\f0\fs22\par
+}
+ 
