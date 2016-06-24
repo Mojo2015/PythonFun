@@ -1,0 +1,45 @@
+6/23/2016
+
+Started creation for the game
+
+Basic structures created for:
+	Player stats & name
+	Enemy stats & names and some generic enemies created
+	Gear stat modifiers and some gear names
+	Armor is verifiably equippable, *BUT STATS STILL DO NOTHING*
+	Inventory function to print out stats of equipped gear created and working, optimized pretty well. print gear function is in gear.c at the bottom.
+	
+	
+**********************************************************************
+
+6/24/16
+	Modified character structures, damage stat working properly based on equipped weapon.
+	Defense stats working properly based on equipped gear
+	HP stats working properly based on equipped gear *NEED A HP COUNTER FOR BATTLE THOUGH*
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+TODO: 
+	Make the stats of equipped gear actually DO SOMETHING. They are currently not modifying the players stats. 
+	Make the PLAYERS STATS actually do something, they only exist in the code but do nothing in the game yet.
+	Make ENEMY stats actually do something
+	add gold
+	add merchants
+	add random item drops
+	add randomness to damage and chance to miss based on attack rating
+	add chance of critical hit (player and enemy)
+	add unidentified items that can roll random (but predicable range) of stats.
+	Implement the game in ncurses, even if it is just in plain old text mode. Try to work it up to some kind of rogue like status
+	Add more gear
+	Make the game have some sort of story.. lol
+	
+WILL NEED A CURRENT HP VARIABLE TOO, CAN'T JUST CHANGE MAX.
+SET UP VITALITY THE SAME WAY YOU HAVE ATK WORKING WITH DAMAGE (to modify HP)

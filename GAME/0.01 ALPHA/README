@@ -1,0 +1,22 @@
+General layout of the game.
+
+The game starts in program.c's main function (obviously).
+
+Main calls hero.c to get users name and then calls it again to generate the characters stats. The characters stats are stored in a struct contained in hero.h
+
+enemy.c / enemy.h contain the games enemies and their stats. The struct used (typedef struct enemy) is in enemy.h. 
+
+
+
+
+LAYOUT:
+
+hero.h
+	structure definitions for character stats and character gear and the stats they can modify.
+
+
+/*********************************************************************************
+ * 
+ *********************************************************************************/
+ 
+ If im going to use this shit all the time just have it as a copy pasta ffs
